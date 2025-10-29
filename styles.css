@@ -5,6 +5,11 @@
   --accent-dark:#9fd4ff;  /* hover */
   --muted:#6f7b8a;
   --text:#0f2130;
+  --civic: #D7878C;
+  --interaction: #2D243C;
+  --design: #D7B74A;
+  --accent-green: #9AC9C0;
+  --deep-red: #6B2E2E;
   --max-width:420px;
   --spacing-xl:96px;
   --spacing-lg:56px;
@@ -29,11 +34,25 @@ body{
 
 /* Header */
 .site-header{
-  background:linear-gradient(180deg, var(--accent), #dff4ff 100%);
+  background:linear-gradient(180deg, var(--accent), #9AC9C0 100%);
   padding:14px 12px;
   border-bottom:1px solid rgba(15,33,48,0.04);
 }
-
+.logo-gradient {
+  background: linear-gradient(
+    100deg,
+    #D7878C 0%,   /* zacht roze */
+    #2D243C 55%,  /* donkerpaars */
+    #D7B74A 60%,  /* goudgeel */
+    #9AC9C0 100%  /* mintgroen */
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* voor betere browser support */
+  font-weight: 800;       /* laat de gradient beter uitkomen */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
 /* klein linkerboven merk/tekst */
 .brand .logo{
   font-size:12px;
@@ -61,7 +80,7 @@ body{
   margin:0 auto;
   max-width:320px;
   font-size:14px;
-  color:var(--muted);
+  color:black;
   font-weight:400;
 }
 
