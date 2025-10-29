@@ -77,7 +77,7 @@ body{
 
 /* grote illustratie variant met extra top padding (zoals grote ster op dak) */
 .illustration.large{
-  margin-top:24px;
+  margin-top:50px;
   margin-bottom:var(--spacing-xl);
 }
 
